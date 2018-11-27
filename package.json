@@ -1,15 +1,20 @@
 {
-  "name": "@magneds/node-hapi-server",
-  "version": "0.0.0",
-  "description": "Hapi based webserver",
-  "main": "source/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Rogier Spieker <rogier.spieker@magneds.com>",
-  "license": "UNLICENSED",
-  "dependencies": {
-    "hapi": "^17.8.1"
-  }
+	"name": "@magneds/node-hapi-server",
+	"version": "0.0.0",
+	"description": "Hapi based webserver",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org"
+	},
+	"main": "source/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"hapi"
+	],
+	"author": "Rogier Spieker <rogier.spieker@magneds.com>",
+	"license": "MIT",
+	"dependencies": {
+		"hapi": "^17.8.1"
+	}
 }
