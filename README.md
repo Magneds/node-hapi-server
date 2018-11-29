@@ -163,7 +163,7 @@ Please see [Changelog](CHANGELOG.md)
 
 ## Testing
 ```bash
-$ composer test
+$ npm test
 ```
 
 ## Contributing
