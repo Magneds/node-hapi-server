@@ -16,5 +16,13 @@
 	"license": "MIT",
 	"dependencies": {
 		"hapi": "^17.8.1"
+	},
+	"devDependencies": {
+		"code": "^5.2.4",
+		"eslint": "^5.9.0",
+		"eslint-config-prettier": "^3.3.0",
+		"eslint-plugin-prettier": "^3.0.0",
+		"lab": "^18.0.0",
+		"prettier": "^1.15.2"
 	}
 }

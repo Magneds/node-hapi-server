@@ -18,7 +18,7 @@ class HapiServer {
 			server: null,
 			config: {},
 			plugins: [],
-			routes: [],
+			routes: []
 		});
 	}
 
@@ -37,10 +37,8 @@ class HapiServer {
 				return this.configure(...settings);
 			}
 
-			if (typeof settings === 'object') {
-				Object.keys(settings).forEach(
-					(key) => (config[key] = settings[key])
-				);
+			if (settings && typeof settings === 'object') {
+				Object.keys(settings).forEach((key) => (config[key] = settings[key]));
 			}
 		});
 
@@ -98,7 +96,7 @@ class HapiServer {
 		if (settings.server) {
 			throw new Error('Server already started');
 		}
-		console.log(config);
+
 		settings.server = new Hapi.server(config);
 
 		await settings.server.register(plugins);
