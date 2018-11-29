@@ -7,9 +7,12 @@
 	},
 	"main": "source/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "node_modules/.bin/lab -vclr",
+		"check-style": "node_modules/.bin/eslint {source,test}/**/*.js && echo 'No problems found'",
+		"fix-style": "node_modules/.bin/eslint --fix {source,test}/**/*.js"
 	},
 	"keywords": [
+		"magneds",
 		"hapi"
 	],
 	"author": "Rogier Spieker <rogier.spieker@magneds.com>",
