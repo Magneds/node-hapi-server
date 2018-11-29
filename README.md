@@ -156,3 +156,27 @@ new HapiServer()
 		console.error(error);
 	});
 ```
+
+## Change log
+
+Please see [Changelog](CHANGELOG.md)
+
+## Testing
+```bash
+$ composer test
+```
+
+## Contributing
+
+Please see [Contributing](CONTRIBUTING.md)
+
+
+## Credits
+
+- [All Contributors][link-contributors]
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[link-contributors]: ../../contributors
