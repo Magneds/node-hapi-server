@@ -1,9 +1,9 @@
 {
-	"name": "@magneds/node-hapi-server",
+	"name": "@magneds/hapi-server",
 	"version": "1.0.0",
 	"description": "Hapi based webserver",
 	"publishConfig": {
-		"registry": "https://registry.npmjs.org"
+		"@magneds:registry": "https://registry.npmjs.org"
 	},
 	"main": "source/index.js",
 	"scripts": {
