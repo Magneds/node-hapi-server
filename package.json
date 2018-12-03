@@ -11,6 +11,13 @@
 		"check-style": "node_modules/.bin/eslint {source,test}/**/*.js && echo 'No problems found'",
 		"fix-style": "node_modules/.bin/eslint --fix {source,test}/**/*.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Magneds/node-hapi-server.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Magneds/node-hapi-server/issues"
+	},
 	"keywords": [
 		"magneds",
 		"hapi"
