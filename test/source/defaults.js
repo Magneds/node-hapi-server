@@ -1,5 +1,5 @@
-const Lab = require('lab');
-const { expect } = require('code');
+const Lab = require('@hapi/lab');
+const { expect } = require('@hapi/code');
 const { experiment, test, it } = (exports.lab = Lab.script());
 
 const HapiServer = require(`${__dirname}/../..`);
@@ -34,8 +34,7 @@ experiment('Default settings (unconfigured)', () => {
 			//  we can't predict the port if none was provided
 		});
 
-		hapi
-			.start()
+		hapi.start()
 			.catch((error) => {
 				expect(error).to.match(/Server already started/);
 			})

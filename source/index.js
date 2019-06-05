@@ -1,4 +1,4 @@
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 
 const storage = new WeakMap();
 
@@ -38,7 +38,9 @@ class HapiServer {
 			}
 
 			if (settings && typeof settings === 'object') {
-				Object.keys(settings).forEach((key) => (config[key] = settings[key]));
+				Object.keys(settings).forEach(
+					(key) => (config[key] = settings[key])
+				);
 			}
 		});
 

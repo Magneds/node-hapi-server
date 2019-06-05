@@ -1,5 +1,5 @@
-const Lab = require('lab');
-const { expect } = require('code');
+const Lab = require('@hapi/lab');
+const { expect } = require('@hapi/code');
 const { experiment, test, it } = (exports.lab = Lab.script());
 
 const HapiServer = require(`${__dirname}/../..`);
@@ -10,7 +10,9 @@ experiment('Configures', () => {
 	test('configure allows for multiple calls', () => {
 		expect(hapi.configure({ host: '127.0.0.1' })).to.equal(hapi);
 		expect(hapi.configure({ port: 50000 })).to.equal(hapi);
-		expect(hapi.configure([{ port: 50001 }], [{ port: 50002 }])).to.equal(hapi);
+		expect(hapi.configure([{ port: 50001 }], [{ port: 50002 }])).to.equal(
+			hapi
+		);
 	});
 
 	test('configure only works on objects, ignoring any other type', () => {
@@ -36,8 +38,7 @@ experiment('Configures', () => {
 			expect(server.info.port).to.equal(50002);
 		});
 
-		hapi
-			.start()
+		hapi.start()
 			.catch((error) => {
 				expect(error).to.match(/Server already started/);
 			})

@@ -1,5 +1,5 @@
-const Lab = require('lab');
-const { expect } = require('code');
+const Lab = require('@hapi/lab');
+const { expect } = require('@hapi/code');
 const { experiment, test, it } = (exports.lab = Lab.script());
 
 const HapiServer = require(`${__dirname}/../..`);
@@ -14,7 +14,10 @@ experiment('Routes', () => {
 		}
 	}));
 	const inject = names.map((name) => async (server) => {
-		const response = await server.inject({ method: 'GET', url: `/${name}` });
+		const response = await server.inject({
+			method: 'GET',
+			url: `/${name}`
+		});
 
 		expect(response).to.be.object();
 		expect(response.statusCode).to.equal(200);

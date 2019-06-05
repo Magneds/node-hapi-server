@@ -1,5 +1,5 @@
-const Lab = require('lab');
-const { expect } = require('code');
+const Lab = require('@hapi/lab');
+const { expect } = require('@hapi/code');
 const { experiment, test, it } = (exports.lab = Lab.script());
 
 const HapiServer = require(`${__dirname}/../..`);
@@ -114,7 +114,9 @@ experiment('Plugins', () => {
 			.start()
 			.catch((error) => {
 				expect(error).to.match(
-					new RegExp(`Plugin ${names[1]} missing dependency ${names[0]}`)
+					new RegExp(
+						`Plugin ${names[1]} missing dependency ${names[0]}`
+					)
 				);
 			}));
 });
