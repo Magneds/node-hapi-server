@@ -25,13 +25,13 @@
 	"author": "Rogier Spieker <rogier.spieker@magneds.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@hapi/hapi": "^18.3.1"
+		"@hapi/hapi": "^18.3.2"
 	},
 	"devDependencies": {
-		"@hapi/code": "^5.3.1",
-		"@hapi/lab": "^19.1.0",
-		"eslint": "^6.0.1",
-		"eslint-config-prettier": "^6.0.0",
+		"@hapi/code": "^6.0.0",
+		"@hapi/lab": "^20.2.1",
+		"eslint": "^6.2.2",
+		"eslint-config-prettier": "^6.1.0",
 		"eslint-plugin-prettier": "^3.1.0",
 		"prettier": "^1.18.2"
 	}
