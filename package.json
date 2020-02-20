@@ -1,6 +1,6 @@
 {
 	"name": "@magneds/hapi-server",
-	"version": "1.0.4",
+	"version": "2.0.0",
 	"description": "Hapi based webserver",
 	"publishConfig": {
 		"@magneds:registry": "https://registry.npmjs.org"
