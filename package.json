@@ -1,6 +1,6 @@
 {
 	"name": "@magneds/hapi-server",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "Hapi based webserver",
 	"publishConfig": {
 		"@magneds:registry": "https://registry.npmjs.org"
@@ -25,14 +25,14 @@
 	"author": "Rogier Spieker <rogier.spieker@magneds.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@hapi/hapi": "^19.0.0"
+		"@hapi/hapi": "^20.0.0"
 	},
 	"devDependencies": {
-		"@hapi/code": "^6.0.0",
-		"@hapi/lab": "^20.2.1",
-		"eslint": "^6.2.2",
-		"eslint-config-prettier": "^6.1.0",
-		"eslint-plugin-prettier": "^3.1.0",
-		"prettier": "^1.18.2"
+		"@hapi/code": "^9.0.3",
+		"@hapi/lab": "^25.1.2",
+		"eslint": "^8.3",
+		"eslint-config-prettier": "^8.8",
+		"eslint-plugin-prettier": "^4.2",
+		"prettier": "^2.8"
 	}
 }

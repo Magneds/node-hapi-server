@@ -18,7 +18,7 @@ class HapiServer {
 			server: null,
 			config: {},
 			plugins: [],
-			routes: []
+			routes: [],
 		});
 	}
 

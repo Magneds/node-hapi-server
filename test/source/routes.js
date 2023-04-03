@@ -11,12 +11,12 @@ experiment('Routes', () => {
 		path: `/${name}`,
 		handler(request, h) {
 			return h.response(name);
-		}
+		},
 	}));
 	const inject = names.map((name) => async (server) => {
 		const response = await server.inject({
 			method: 'GET',
-			url: `/${name}`
+			url: `/${name}`,
 		});
 
 		expect(response).to.be.object();
