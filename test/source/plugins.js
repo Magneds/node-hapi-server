@@ -16,14 +16,14 @@ experiment('Plugins', () => {
 				path: `/plugin/${name}`,
 				handler(request, h) {
 					return h.response(`plugin ${name}`);
-				}
+				},
 			});
-		}
+		},
 	}));
 	const inject = names.map((name) => async (server) => {
 		const response = await server.inject({
 			method: 'GET',
-			url: `/plugin/${name}`
+			url: `/plugin/${name}`,
 		});
 
 		expect(response).to.be.object();
